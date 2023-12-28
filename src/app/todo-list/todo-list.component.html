@@ -1,0 +1,5 @@
+<ul>
+    <li *ngFor="let todo of listTodo; index as i">{{todo.userId+' - '+todo.id+' - '+todo.title+' - '+todo.completed}}</li>
+</ul>
+<br>
+<button (click)="bilan()">Bilan</button>

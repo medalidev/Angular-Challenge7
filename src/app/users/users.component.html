@@ -1,0 +1,7 @@
+<textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea">{{user}}</textarea>
+
+<button (click)="verify()">Vérifier</button>
+<br><br>
+<ul>
+    <li *ngFor="let user of listUsers; index as i">{{user.id+' - '+user.name+' - '+user.username+' - '+user.email}}</li>
+</ul>
